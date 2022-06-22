@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 
-from brain_games.games.game_even import even_not_even
+from brain_games.games.game_calc import calculator
 
 
 def main():
     print("Welcome to the Brain Games!")
-    even_not_even()
+    calculator()
 
 
 if __name__ == '__main__':

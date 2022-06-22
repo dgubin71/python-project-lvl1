@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 from random import randrange
-from brain_games.game_play.input_output import welcome_user
-from brain_games.game_play.input_output import chek_answer
+from brain_games.input_output import welcome_user
+from brain_games.input_output import chek_answer
 
 
 def even_not_even():
