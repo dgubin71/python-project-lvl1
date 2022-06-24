@@ -9,7 +9,7 @@ def calculator():
     print('What is the result of the expression?')
     answer_ok = 0                        # counter correct answer
     operation_list = ["+", '-', '*']
-    NUMBER_OF_ROUNDS = 3                 # Maximum number of successful rounds
+    NUMBER_OF_ROUNDS = 3                 # Maximum number of successful rounds 
     while answer_ok != NUMBER_OF_ROUNDS:
         number1 = randrange(20)
         number2 = randrange(20)
