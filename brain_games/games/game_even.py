@@ -8,7 +8,8 @@ def even_not_even():
     name = welcome_user()
     print('Answer "yes" if the number is even, otherwise answer "no".')
     answer_ok = 0               # counter correct answer
-    while answer_ok != 3:
+    NUMBER_OF_ROUNDS = 3        # Maximum number of successful rounds
+    while answer_ok != NUMBER_OF_ROUNDS:
         number = randrange(100)
         true_answer = 'yes' if number % 2 == 0 else 'no'
         if chek_answer(number, true_answer, name):

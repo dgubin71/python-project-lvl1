@@ -7,9 +7,10 @@ from brain_games.input_output import chek_answer
 def calculator():
     name = welcome_user()
     print('What is the result of the expression?')
-    answer_ok = 0
-    operation_list = ["+", '-', '*']              # counter correct answer
-    while answer_ok != 3:
+    answer_ok = 0                        # counter correct answer
+    operation_list = ["+", '-', '*']
+    NUMBER_OF_ROUNDS = 3                 # Maximum number of successful rounds
+    while answer_ok != NUMBER_OF_ROUNDS:
         number1 = randrange(20)
         number2 = randrange(20)
         operation = operation_list[randrange(3)]

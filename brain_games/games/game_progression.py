@@ -8,7 +8,8 @@ def progression():
     name = welcome_user()
     print('What number is missing in the progression?')
     answer_ok = 0            # counter correct answer
-    while answer_ok != 3:
+    NUMBER_OF_ROUNDS = 3     # Maximum number of successful rounds
+    while answer_ok != NUMBER_OF_ROUNDS:
         number1 = randrange(5)
         number2 = randrange(20)
         double_point_pos = randrange(1, 11)

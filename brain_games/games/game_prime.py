@@ -8,9 +8,10 @@ def prime_number():
     name = welcome_user()
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
     answer_ok = 0               # counter correct answer
-    while answer_ok != 3:
+    NUMBER_OF_ROUNDS = 3        # Maximum number of successful rounds
+    while answer_ok != NUMBER_OF_ROUNDS:
         number = randrange(31)
-        true_answer = 'yes' if isPrime(number) else 'no'
+        true_answer = 'yes' if is_prime(number) else 'no'
         if chek_answer(number, true_answer, name):
             answer_ok += 1
         else:
@@ -19,7 +20,7 @@ def prime_number():
         print(f'Congratulations, {name}!')
 
 
-def isPrime(n):
+def is_prime(n):
     d = 2
     while d * d <= n and n % d != 0:
         d += 1
