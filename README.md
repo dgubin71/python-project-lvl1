@@ -6,7 +6,7 @@ This is learning project of the  python developer course .
 The project is a package. before  install a package you need:
 
  install python3 v3.6 or higher and poetry v1.0.0
- clone the repository https://github.com/dgubin71/python-project-lvl1  to the project directory.
+ clone the repository https://github.com/dgubin71/python-project-lvl1  to the project directory
  input commands:
 
     $ make install           create environment variables and dependencies
