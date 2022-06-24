@@ -21,7 +21,7 @@ def prime_number():
 
 
 def is_prime(n):
-    if n == 0:
+    if n == 0 or n == 1:
         return False
     d = 2
     while d * d <= n and n % d != 0:
