@@ -9,15 +9,15 @@ The project is a package. before  install a package you need:
   - clone the repository https://github.com/dgubin71/python-project-lvl1  to the project directory.
   - input commands:
 
-    $ make install           # create environment variables and dependencies
-    $ make build             # create build package
-    $ make publish           # publish package into local index
-    $ make package-install   # install package into operation system
+    $ make install           create environment variables and dependencies
+    $ make build             create build package
+    $ make publish           publish package into local index
+    $ make package-install   install package into operation system
 
- YYou can use  commands of package for start games:
+ You can use  commands of package for start games:
 
-    $ brain-even             # Please answer "yes" if the number is even, otherwise answer "no"
-    $ brain-calc             # What is the result of the expression? 
-    $ brain-gcd              # Find the greatest common divisor of given numbers
-    $ brain-progression      # What number is missing in the progression?
-    $ brain-prime            # Please answer "yes" if given number is prime. Otherwise answer "no"
+    $ brain-even             Please answer "yes" if the number is even, otherwise answer "no"
+    $ brain-calc             What is the result of the expression? 
+    $ brain-gcd              Find the greatest common divisor of given numbers
+    $ brain-progression      What number is missing in the progression?
+    $ brain-prime            Please answer "yes" if given number is prime. Otherwise answer "no"
