@@ -1,8 +1,11 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
+description = "1st educational project at the course python developer"
+classifiers = ["Topic :: Games/Entertainment :: Puzzle Games"]
 authors = ["Дмитрий Губин <dgubin71@gmail.com>"]
+repository = ["https://github.com/dgubin71/python-project-lvl1"]
+
 packages = [
   { include = "brain_games" },
  
