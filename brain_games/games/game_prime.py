@@ -1,22 +1,20 @@
 #!/usr/bin/env python3
 from random import randrange
 from brain_games.input_output import welcome_user
-from brain_games.input_output import chek_answer
+from brain_games.input_output import start_the_match
 
 
 def prime_number():
-    name = welcome_user('Answer "yes" if given number is prime. Otherwise answer "no".')
-    answer_ok = 0               # counter correct answer
-    NUMBER_OF_ROUNDS = 3        # Maximum number of successful rounds
-    while answer_ok != NUMBER_OF_ROUNDS:
-        number = randrange(31)
-        true_answer = 'yes' if is_prime(number) else 'no'
-        if chek_answer(number, true_answer, name):
-            answer_ok += 1
-        else:
-            break
-    else:
+    name = welcome_user('Answer "yes" if given number is prime.'
+                        ' Otherwise answer "no".')
+    if start_the_match(ask_prime, name):
         print(f'Congratulations, {name}!')
+
+
+def ask_prime():
+    question = randrange(31)
+    true_answer = 'yes' if is_prime(question) else 'no'
+    return str(question), true_answer
 
 
 def is_prime(n):

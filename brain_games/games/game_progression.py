@@ -1,18 +1,13 @@
 #!/usr/bin/env python3
 from random import randrange
 from brain_games.input_output import welcome_user
-from brain_games.input_output import chek_answer
-from brain_games.input_output import ask_question
 from brain_games.input_output import start_the_match
 
 
 def progression():
     name = welcome_user('What number is missing in the progression?')
-    if start_the_match(ask_progression,name):
+    if start_the_match(ask_progression, name):
         print(f'Congratulations, {name}!')
-
-
-
 
 
 def ask_progression():
@@ -27,7 +22,4 @@ def ask_progression():
         else:
             next_item = str((i + number1) * number2)
         question = f'{question} {next_item}'
-
     return question, true_answer
-
-
