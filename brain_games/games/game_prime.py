@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 from random import randrange
 from brain_games.input_output import welcome_user
 from brain_games.input_output import start_the_match

@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 from random import randrange
 from math import gcd
 from brain_games.input_output import welcome_user
