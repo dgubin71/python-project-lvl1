@@ -5,8 +5,7 @@ from brain_games.input_output import chek_answer
 
 
 def prime_number():
-    name = welcome_user()
-    print('Answer "yes" if given number is prime. Otherwise answer "no".')
+    name = welcome_user('Answer "yes" if given number is prime. Otherwise answer "no".')
     answer_ok = 0               # counter correct answer
     NUMBER_OF_ROUNDS = 3        # Maximum number of successful rounds
     while answer_ok != NUMBER_OF_ROUNDS:

@@ -2,28 +2,25 @@
 from random import randrange
 from brain_games.input_output import welcome_user
 from brain_games.input_output import chek_answer
+from brain_games.input_output import ask_question
+from brain_games.input_output import start_the_match
 
 
 def calculator():
-    name = welcome_user()
-    print('What is the result of the expression?')
-    answer_ok = 0                        # counter correct answer
-    operation_list = ["+", '-', '*']
-    NUMBER_OF_ROUNDS = 3                 # Maximum number of successful rounds
-    while answer_ok != NUMBER_OF_ROUNDS:
-        number1 = randrange(20)
-        number2 = randrange(20)
-        operation = operation_list[randrange(3)]
-        if operation == '+':
-            true_answer = number1 + number2
-        elif operation == '-':
-            true_answer = number1 - number2
-        else:
-            true_answer = number1 * number2
-        question = f'{number1} {operation} {number2}'
-        if chek_answer(question, str(true_answer), name):
-            answer_ok += 1
-        else:
-            break
-    else:
+    name = welcome_user('What is the result of the expression?')
+    if start_the_match(ask_calc, name):
         print(f'Congratulations, {name}!')
+
+def ask_calc():        
+    operation_list = ["+", '-', '*']
+    number1 = randrange(20)
+    number2 = randrange(20)
+    operation = operation_list[randrange(3)]
+    if operation == '+':
+        true_answer = number1 + number2
+    elif operation == '-':
+        true_answer = number1 - number2
+    else:
+        true_answer = number1 * number2
+    question = f'{number1} {operation} {number2}'
+    return question, true_answer    

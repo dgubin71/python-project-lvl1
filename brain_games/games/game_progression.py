@@ -2,29 +2,32 @@
 from random import randrange
 from brain_games.input_output import welcome_user
 from brain_games.input_output import chek_answer
+from brain_games.input_output import ask_question
+from brain_games.input_output import start_the_match
 
 
 def progression():
-    name = welcome_user()
-    print('What number is missing in the progression?')
-    answer_ok = 0            # counter correct answer
-    NUMBER_OF_ROUNDS = 3     # Maximum number of successful rounds
-    while answer_ok != NUMBER_OF_ROUNDS:
-        number1 = randrange(5)
-        number2 = randrange(20)
-        double_dot_pos = randrange(1, 11)
-        question = ''
-        for i in range(1, 11):
-            if i == double_dot_pos:
-                true_answer = str((i + number1) * number2)
-                next_item = '..'
-            else:
-                next_item = str((i + number1) * number2)
-            question = f'{question} {next_item}'
-
-        if chek_answer(question.strip(), str(true_answer), name):
-            answer_ok += 1
-        else:
-            break
-    else:
+    name = welcome_user('What number is missing in the progression?')
+    if start_the_match(ask_progression,name):
         print(f'Congratulations, {name}!')
+
+
+
+
+
+def ask_progression():
+    number1 = randrange(5)
+    number2 = randrange(20)
+    double_dot_pos = randrange(1, 11)
+    question = ''
+    for i in range(1, 11):
+        if i == double_dot_pos:
+            true_answer = str((i + number1) * number2)
+            next_item = '..'
+        else:
+            next_item = str((i + number1) * number2)
+        question = f'{question} {next_item}'
+
+    return question, true_answer
+
+
