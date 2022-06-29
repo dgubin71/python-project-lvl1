@@ -20,4 +20,4 @@ def ask_next_question():
         else:
             next_item = str((i + number1) * number2)
         question = f'{question} {next_item}'
-    return question, true_answer
+    return question.strip(), true_answer
