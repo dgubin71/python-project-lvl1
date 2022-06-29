@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-from brain_games.games.game_gcd import gcd_fun
+from brain_games.games.gcd import gcd_fun
 
 
 def main():

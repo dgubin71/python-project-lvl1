@@ -1,15 +1,14 @@
 from random import randrange
-from brain_games.input_output import welcome_user
-from brain_games.input_output import start_the_match
+from brain_games.brain_engin import welcome_to_play
 
 
 def progression():
-    name = welcome_user('What number is missing in the progression?')
-    if start_the_match(ask_progression, name):
-        print(f'Congratulations, {name}!')
+    greeting = 'What number is missing in the progression?'
+    game_module_name = 'brain_games.games.progression'
+    welcome_to_play(greeting, game_module_name)
 
 
-def ask_progression():
+def ask_next_question():
     number1 = randrange(5)
     number2 = randrange(20)
     double_dot_pos = randrange(1, 11)
