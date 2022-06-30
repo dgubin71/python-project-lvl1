@@ -1,14 +1,9 @@
 from random import randrange
-from brain_games.brain_engin import welcome_to_play
 
 
-def progression():
-    greeting = 'What number is missing in the progression?'
-    game_module_name = 'brain_games.games.progression'
-    welcome_to_play(greeting, game_module_name)
-
-
-def ask_next_question():
+def get_next_question(attempt):
+    if attempt == '1st':
+        print('What number is missing in the progression?')
     number1 = randrange(5)
     number2 = randrange(20)
     double_dot_pos = randrange(1, 11)

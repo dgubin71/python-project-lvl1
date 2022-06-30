@@ -1,26 +1,23 @@
 import prompt
-import importlib
 
-NUMBER_OF_ROUNDS = 3     # Maximum number of successful rounds
+NUMBER_OF_ROUNDS = ['1st', '2nd', '3rd']   # Maximum number of rounds
 
 
-def welcome_to_play(greetings, game_module):
+def play(game_module):
+    game_on = True
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
-    print(f'{greetings}')
-    game_module = importlib.import_module(game_module)
-    answer_ok = 0
-    while answer_ok != NUMBER_OF_ROUNDS:
-        (question, true_answer) = game_module.ask_next_question()
+    for attempt in NUMBER_OF_ROUNDS:
+        (question, true_answer) = game_module.get_next_question(attempt)
         print(f'Question: {question}')
         answer = prompt.string('Your answer: ')
         if answer == true_answer:
             print('Correct !')
-            answer_ok += 1
         else:
             print(f"'{answer}' is wrong answer ;(."
                   f" Correct answer was  '{true_answer}'.")
             print(f"Let's try again, {name}!")
+            game_on = False
             break
-    if answer_ok == NUMBER_OF_ROUNDS:
+    if game_on:
         print(f'Congratulations, {name}!')

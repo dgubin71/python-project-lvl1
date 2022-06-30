@@ -1,14 +1,9 @@
 from random import randrange
-from brain_games.brain_engin import welcome_to_play
 
 
-def calculator():
-    greeting = 'What is the result of the expression?'
-    game_module_name = 'brain_games.games.calc'
-    welcome_to_play(greeting, game_module_name)
-
-
-def ask_next_question():
+def get_next_question(attempt):
+    if attempt == '1st':
+        print('What is the result of the expression?')
     operation_list = ["+", '-', '*']
     number1 = randrange(20)
     number2 = randrange(20)

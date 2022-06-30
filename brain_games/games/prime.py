@@ -1,15 +1,10 @@
 from random import randrange
-from brain_games.brain_engin import welcome_to_play
 
 
-def prime_number():
-    greeting = 'Answer "yes" if given number is prime. Otherwise answer "no".'
-    game_module_name = 'brain_games.games.prime'
-    welcome_to_play(greeting, game_module_name)
-
-
-def ask_next_question():
-    question = randrange(31)
+def get_next_question(attempt):
+    if attempt == '1st':
+        print('Answer "yes" if given number is prime. Otherwise answer "no".')
+    question = randrange(1, 33)
     true_answer = 'yes' if is_prime(question) else 'no'
     return str(question), true_answer
 

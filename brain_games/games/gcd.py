@@ -1,15 +1,10 @@
 from random import randrange
 from math import gcd
-from brain_games.brain_engin import welcome_to_play
 
 
-def gcd_fun():
-    greeting = 'Find the greatest common divisor of given numbers.'
-    game_module_name = 'brain_games.games.gcd'
-    welcome_to_play(greeting, game_module_name)
-
-
-def ask_next_question():
+def get_next_question(attempt):
+    if attempt == '1st':
+        print('Find the greatest common divisor of given numbers.')
     number1 = randrange(20)
     number2 = randrange(20)
     true_answer = gcd(number1, number2)
