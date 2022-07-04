@@ -15,7 +15,7 @@ def get_next_question_right_answer():
 
 
 def is_prime(n):
-    if n == 0 or n == 1:
+    if n < 2 :
         return False
     d = 2
     for d in range(d, n):
