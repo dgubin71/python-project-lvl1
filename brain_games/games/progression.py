@@ -1,14 +1,7 @@
 from random import randrange
 
 
-greeting_on = True       # greeting is "ON" only for first round
-
-
 def get_next_question_right_answer():
-    global greeting_on
-    if greeting_on is True:
-        print('What number is missing in the progression?')
-        greeting_on = False
     number1 = randrange(5)
     number2 = randrange(20)
     double_dot_pos = randrange(1, 11)

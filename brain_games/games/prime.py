@@ -1,25 +1,17 @@
 from random import randrange
-
-
-greeting_on = True   # greeting is "ON" only for first round
+from math import sqrt
 
 
 def get_next_question_right_answer():
-    global greeting_on
-    if greeting_on is True:
-        print('Answer "yes" if given number is prime. Otherwise answer "no".')
-        greeting_on = False
     question = randrange(1, 33)
-    true_answer = 'yes' if is_prime(question) else 'no'
-    return str(question), true_answer
+    right_answer = 'yes' if is_prime(question) else 'no'
+    return str(question), right_answer
 
 
-def is_prime(n):
-    if n < 2:
+def is_prime(number):
+    if number < 2:
         return False
-    d = 2
-    for d in range(d, n):
-        if d * d >= n and n % d == 0:
+    for d in range(2, int(sqrt(number) + 1)):
+        if number > d and number % d == 0:
             return False
-    else:
-        return True
+    return True

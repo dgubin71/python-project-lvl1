@@ -21,3 +21,7 @@ The project is a package. before  install a package you need:
     $ brain-gcd              Find the greatest common divisor of given numbers
     $ brain-progression      What number is missing in the progression?
     $ brain-prime            Please answer "yes" if given number is prime. Otherwise answer "no"
+
+Demo of the project:
+
+    https://asciinema.org/a/5wZMGV5I2qEmIspZ65LLkuMI5
