@@ -14,6 +14,10 @@ The project is a package. before  install a package you need:
     $ make publish           publish package into local index
     $ make package-install   install package into operation system
 
+Package installation demo:
+    
+    https://asciinema.org/a/cCle5xhNm198nmGs9dbf6ayMl
+
  You can use  commands of package for start games:
 
     $ brain-even             Please answer "yes" if the number is even, otherwise answer "no"
