@@ -1,6 +1,9 @@
 from random import randrange
 
 
+GAME_DISCRIPTION = 'What is the result of the expression?'
+
+
 def get_next_question_right_answer():
     signs_of_operations = ["+", '-', '*']
     number1 = randrange(20)

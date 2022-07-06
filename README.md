@@ -16,7 +16,7 @@ The project is a package. before  install a package you need:
 
 Package installation demo:
     
-    https://asciinema.org/a/cCle5xhNm198nmGs9dbf6ayMl
+    [![asciicast](https://asciinema.org/a/cCle5xhNm198nmGs9dbf6ayMl)](https://asciinema.org/a/cCle5xhNm198nmGs9dbf6ayMl)
 
  You can use  commands of package for start games:
 
@@ -28,4 +28,4 @@ Package installation demo:
 
 Demo of the project:
 
-    https://asciinema.org/a/5wZMGV5I2qEmIspZ65LLkuMI5
+    [![asciicast](https://asciinema.org/a/5wZMGV5I2qEmIspZ65LLkuMI5)](https://asciinema.org/a/5wZMGV5I2qEmIspZ65LLkuMI5)

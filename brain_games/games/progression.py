@@ -1,16 +1,18 @@
 from random import randrange
 
+GAME_DISCRIPTION = 'What number is missing in the progression?'
+
 
 def get_next_question_right_answer():
-    number1 = randrange(5)
-    number2 = randrange(20)
-    double_dot_pos = randrange(1, 11)
-    question = ''
-    for i in range(1, 11):
-        if i == double_dot_pos:
-            right_answer = str((i + number1) * number2)
-            next_item = '..'
-        else:
-            next_item = str((i + number1) * number2)
-        question = f'{question} {next_item}'
-    return question.strip(), right_answer
+    lenght_progression = randrange(5, 10)
+    start_progression = randrange(1, 20)
+    step_progression = randrange(1, 50)
+    end_progression = start_progression + lenght_progression * step_progression
+    random_index = randrange(0, lenght_progression - 1)
+    progression = []
+    for i in range(start_progression, end_progression, step_progression):
+        progression.append(str(i))
+    right_answer = progression[random_index]
+    progression[random_index] = '..'
+    question = ' '.join(progression)
+    return question, right_answer
