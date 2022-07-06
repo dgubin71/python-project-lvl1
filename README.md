@@ -6,7 +6,7 @@ This is learning project of the  python developer course .
 The project is a package. before  install a package you need:
 
  Install python3 v3.6 or higher and poetry v1.0.0.                                             
- Clone the repository https://github.com/dgubin71/python-project-lvl1  to the project directory
+ Clone the repository <https://github.com/dgubin71/python-project-lvl1>  to the project directory
         and input commands:
 
     $ make install           create environment variables and dependencies
@@ -14,9 +14,7 @@ The project is a package. before  install a package you need:
     $ make publish           publish package into local index
     $ make package-install   install package into operation system
 
-Package installation demo:
-    
-    [![asciicast](https://asciinema.org/a/cCle5xhNm198nmGs9dbf6ayMl)](https://asciinema.org/a/cCle5xhNm198nmGs9dbf6ayMl)
+Package installation demo: <https://asciinema.org/a/cCle5xhNm198nmGs9dbf6ayMl)>
 
  You can use  commands of package for start games:
 
@@ -26,6 +24,4 @@ Package installation demo:
     $ brain-progression      What number is missing in the progression?
     $ brain-prime            Please answer "yes" if given number is prime. Otherwise answer "no"
 
-Demo of the project:
-
-    [![asciicast](https://asciinema.org/a/5wZMGV5I2qEmIspZ65LLkuMI5)](https://asciinema.org/a/5wZMGV5I2qEmIspZ65LLkuMI5)
+Demo of the project: <https://asciinema.org/a/5wZMGV5I2qEmIspZ65LLkuMI5>
