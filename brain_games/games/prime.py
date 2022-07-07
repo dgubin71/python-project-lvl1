@@ -3,7 +3,7 @@ from math import sqrt
 
 
 DESCRIPTION = 'Answer "yes" if given number is prime. \
-                    Otherwise answer "no".'
+Otherwise answer "no".'
 
 
 def get_next_question_right_answer():
