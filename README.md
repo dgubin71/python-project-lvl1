@@ -48,14 +48,14 @@ The game is started by the command:
 ### Game "Find number wich is missing in the progression"
 
 You are shown an arithmetic progression with one element missing.
-You must calculate the missing element and write as the result.
+You must calculate the missing element and write down as the result.
 The game is started by the command:    
     ```$ brain-progression```
 [![asciicast](https://asciinema.org/a/YXxnSaprMFKjlWTpdj7YNUJJp.png)](https://asciinema.org/a/YXxnSaprMFKjlWTpdj7YNUJJp)
 
 ### Game "Prime number or not"
 
-You are shown a random number. You need to determine whether this number is prime or not and write "yes" or "no".
+You are shown a random number. You need to determine whether this number is prime or not and write down "yes" or "no".
 The game is started by the command:  
    ```$ brain-prime```
 [![asciicast](https://asciinema.org/a/IbGhNPrjRfC7KZLGKnsz7Cefl.png)](https://asciinema.org/a/IbGhNPrjRfC7KZLGKnsz7Cefl)  
