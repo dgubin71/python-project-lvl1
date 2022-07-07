@@ -3,7 +3,7 @@
 <a href="https://codeclimate.com/github/dgubin71/python-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/1f1f90c13c70ed902b35/maintainability" /></a>
 
 ## Brain games
-This is learning project of the  python developer course . 
+This is a learning project of the  python developer course . 
 The project is a package. Before the package installation you need to:  
 - Install python3 v3.6 or higher and poetry v1.0.0.                                             
 - Clone the repository <https://github.com/dgubin71/python-project-lvl1>  to the project directory and execute  next command:  
@@ -15,7 +15,7 @@ The project is a package. Before the package installation you need to:
 
 Package installation Demo: [![asciicast](https://asciinema.org/a/cCle5xhNm198nmGs9dbf6ayMl.png)](https://asciinema.org/a/cCle5xhNm198nmGs9dbf6ayMl)
 
- The package contain 5 games. For start games use commands:  
+ The package contains 5 games. For start games use commands:  
  
     $ brain-even             Even or odd
     $ brain-calc             Сalculator
