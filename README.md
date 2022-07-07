@@ -14,7 +14,7 @@ The project is a package. before  install a package you need:
     $ make publish           publish package into local index
     $ make package-install   install package into operation system
 
-Package installation [demo:](https://asciinema.org/a/cCle5xhNm198nmGs9dbf6ayMl)
+Package installation [demo](https://asciinema.org/a/cCle5xhNm198nmGs9dbf6ayMl)
 
  You can use  commands of package for start games:
 
@@ -24,4 +24,4 @@ Package installation [demo:](https://asciinema.org/a/cCle5xhNm198nmGs9dbf6ayMl)
     $ brain-progression      What number is missing in the progression?
     $ brain-prime            Please answer "yes" if given number is prime. Otherwise answer "no"
 
-[Demo of the project:](https://asciinema.org/a/5wZMGV5I2qEmIspZ65LLkuMI5)
+[Demo of the project](https://asciinema.org/a/5wZMGV5I2qEmIspZ65LLkuMI5)
