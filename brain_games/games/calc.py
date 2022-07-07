@@ -1,14 +1,13 @@
-from random import randrange
+import random
 
 
-GAME_DISCRIPTION = 'What is the result of the expression?'
+DESCRIPTION = 'What is the result of the expression?'
 
 
 def get_next_question_right_answer():
-    signs_of_operations = ["+", '-', '*']
-    number1 = randrange(20)
-    number2 = randrange(20)
-    operation = signs_of_operations[randrange(3)]
+    number1 = random.randrange(20)
+    number2 = random.randrange(20)
+    operation = random.choice(("+", '-', '*'))
     if operation == '+':
         right_answer = number1 + number2
     elif operation == '-':

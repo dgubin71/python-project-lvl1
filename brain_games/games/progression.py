@@ -1,6 +1,6 @@
 from random import randrange
 
-GAME_DISCRIPTION = 'What number is missing in the progression?'
+DESCRIPTION = 'What number is missing in the progression?'
 
 
 def get_next_question_right_answer():

@@ -1,7 +1,7 @@
 from random import randrange
 from math import gcd
 
-GAME_DISCRIPTION = 'Find the greatest common divisor of given numbers.'
+DESCRIPTION = 'Find the greatest common divisor of given numbers.'
 
 
 def get_next_question_right_answer():

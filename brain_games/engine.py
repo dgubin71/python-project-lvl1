@@ -1,12 +1,12 @@
 import prompt
 
-NUMBER_OF_ROUNDS = 3  # Maximum number of rounds
+NUMBER_OF_ROUNDS = 3
 
 
 def play(game):
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
-    print(game.GAME_DISCRIPTION)
+    print(game.DESCRIPTION)
     for _ in range(NUMBER_OF_ROUNDS):
         (question, right_answer) = game.get_next_question_right_answer()
         print(f'Question: {question}')

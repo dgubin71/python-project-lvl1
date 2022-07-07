@@ -2,14 +2,14 @@ from random import randrange
 from math import sqrt
 
 
-GAME_DISCRIPTION = 'Answer "yes" if given number is prime. \
+DESCRIPTION = 'Answer "yes" if given number is prime. \
                     Otherwise answer "no".'
 
 
 def get_next_question_right_answer():
     question = randrange(1, 33)
     right_answer = 'yes' if is_prime(question) else 'no'
-    return str(question), right_answer
+    return question, right_answer
 
 
 def is_prime(number):

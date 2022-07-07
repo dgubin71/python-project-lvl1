@@ -1,6 +1,6 @@
 from random import randrange
 
-GAME_DISCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".'
+DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def get_next_question_right_answer():
